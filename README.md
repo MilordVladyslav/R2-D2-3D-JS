@@ -8,7 +8,7 @@
 
 ```
 
-It is required a few seconds for loading. Just keep waiting. Maybe I will make preloaded later 
+It is required a few seconds for loading. Just keep waiting. Probably I should make preloaded later 
 
 ![alt text](r2d2.jpg "R2D2")
 
