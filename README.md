@@ -1,6 +1,6 @@
 ## R2-D2 from Star Wars
 
-### Available on github-pages:  https://milordvladyslav.github.io/R2D2-3D-JS/
+### Available on github-pages:  https://milordvladyslav.github.io/R2-D2-3D-JS/
 
 ### Three.js
 
