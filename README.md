@@ -8,6 +8,8 @@
 
 ```
 
+It is required a few seconds for loading. Just keep waiting. Maybe I will make preloaded later 
+
 ![alt text](r2d2.jpg "R2D2")
 
 ![alt text](r2d2inside.jpg "R2D2 inside")
