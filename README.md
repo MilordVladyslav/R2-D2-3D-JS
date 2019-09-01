@@ -3,8 +3,7 @@
 ### Available on github-pages:  https://milordvladyslav.github.io/R2D2-3D-JS/
 
 ### Three.js
-```
-npm run build
+
 ```
 
 ### Screenshots
