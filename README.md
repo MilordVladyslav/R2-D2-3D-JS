@@ -6,8 +6,6 @@
 
 ```
 
-### Screenshots
-
 ```
 
 ![alt text](r2d2.jpg "R2D2")
