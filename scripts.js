@@ -36,18 +36,17 @@ mtlLoader.load('r2-d2.mtl', function (materials) {
     objLoader.setMaterials(materials);
     objLoader.setPath('./assets/');
     objLoader.load('r2-d2.obj', function (object) {
-
+        
         scene.add(object);
         object.position.y -= 60;
-
+        document.getElementById("preloader").remove()
     });
 
 });
-
 var animate = function () {
 	requestAnimationFrame( animate );
 	controls.update();
-	renderer.render(scene, camera);
+    renderer.render(scene, camera);
 };
 
 animate();

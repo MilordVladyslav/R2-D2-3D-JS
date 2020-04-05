@@ -3,10 +3,125 @@
 		<title>Three.js Boilerplate</title>
 		<style>
 			body { margin: 0; }
-			canvas { width: 100%; height: 100% }
+			canvas { width: 100%; height: 100%;}
+			/* #preloader {
+				border: 1px solid red;
+				position: absolute;
+				z-index: 2;
+				top: 0%;
+				left: 0%;
+				width: 100%;
+				height: 100%;
+				color: red;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			} */
+
+
+
+			div.preloader { 
+				height: 100vh;
+				width: 100vw;
+				
+				/* center anything */
+				
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				
+				z-index: 1;
+				position: fixed;
+				top: 0;left: 0;
+				background: black;
+				opacity: 1;
+			}
+
+			.preloader.hidden { z-index:0;}
+
+			div.preloader-color { position: absolute;border-radius:50%;}
+			div.preloader-first { 
+				/* change here when you're using another animation */
+				animation: spin 1s linear infinite;
+				height: 25px;
+				width: 25px;
+				
+				border: 4px #333 solid;
+				border-top: 4px #004c97 solid;
+				border-bottom: 4px #004c97 solid;
+			}
+
+			div.preloader-second { 
+				/* change here when you're using another animation */
+				animation: spin 1.4s linear infinite;
+				
+				height: 35px;
+				width: 35px;
+				
+				border: 4px #333 solid;
+				border-right: 4px #c62828 solid;
+				border-left: 4px #c62828 solid;
+			}
+
+			div.preloader-third { 
+				/* change here when you're using another animation */
+				animation: spin 1.7s linear infinite;
+				
+				height: 45px;
+				width: 45px;
+				
+				border: 4px #333 solid;
+				border-left: 4px #004c97 solid;
+				border-right: 4px #004c97 solid;
+			}
+			
+			.preloader-text {
+				color: white;
+				font-family: sans-serif;
+				position: relative;
+				top: 50px;
+				font-size: 22px;
+			}
+				/* animation to make the preloader rotate */
+
+			@keyframes spin {
+				0% { transform: rotate(0deg); }
+				100% { transform: rotate(360deg);}
+			}
+
+				/* change animation name at line
+
+				48
+				36
+				25
+				
+				*/
+
+			@keyframes spinBackwards {
+				0% { transform: rotate(360deg); }
+				100% { transform: rotate(0deg); }
+			}
+
+				/* ################## */
+				/* ################## */
+				/* ################## */
+				/* NO IMPORTANT STUFF */
+				/* ################## */
+				/* ################## */
+				/* ################## */
+
+			* { transition:all 200ms ease-in-out;}
+
 		</style>
 	</head>
 	<body>
+		<div class="preloader" id="preloader">
+			<div class="preloader-first preloader-color"></div>
+			<div class="preloader-second preloader-color"></div>
+			<div class="preloader-third preloader-color"></div>
+			<div class="preloader-text">Wait a moment, please )</div>
+		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
 		<script src="./assets/OrbitControls.js"></script>
 		<script src="./assets/OBJLoader.js"></script>
